@@ -47,7 +47,7 @@ fake_ci: .env
 
 publish_pacts: .env
 	@echo "\n========== STAGE: publish pacts ==========\n"
-	@"${PACT_CLI}" publish ${PWD}/pacts --consumer-app-version ${GIT_COMMIT} --branch ${GIT_BRANCH} --broker-base-url https://test.pactflow.io --broker-token SomeToken
+	@"${PACT_CLI}" publish ${PWD}/pacts --consumer-app-version ${GIT_COMMIT} --branch ${GIT_BRANCH} --broker-base-url https://khoinguyen.pactflow.io --broker-token 4C97UjTboM9QJOgYCHE0aA
 
 ## =====================
 ## Build/test tasks
